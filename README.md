@@ -44,21 +44,21 @@ This container needs to connect to a database, so take a look at the `docker-com
 ## Environment variables and defaults
 
 * __DB\_HOST__
- * host of mysql db
- * default: `db`
+    * host of mysql db
+    * default: `db`
 
 * __SECRET__
- * phpmyadmin `blowfish_secret` - should be a 32 character string
- * default: _auto generated string using: `pwgen 32 1`_
+    * phpmyadmin `blowfish_secret` - should be a 32 character string
+    * default: _auto generated string using: `pwgen 32 1`_
 
 ### BASEIMAGE: Environment variables and defaults
 
 * __DISABLE\_TLS__
- * default: not set - if set yo any value `https` and the `HSTS_HEADERS_*` will be disabled
+    * default: not set - if set yo any value `https` and the `HSTS_HEADERS_*` will be disabled
 
 * __HSTS\_HEADERS\_ENABLE__
- * default: not set - if set to any value the HTTP Strict Transport Security will be activated on SSL Channel
+    * default: not set - if set to any value the HTTP Strict Transport Security will be activated on SSL Channel
 
 * __HSTS\_HEADERS\_ENABLE\_NO\_SUBDOMAINS__
- * default: not set - if set together with __HSTS\_HEADERS\_ENABLE__ and set to any value the HTTP Strict Transport Security will be deactivated on subdomains
+    * default: not set - if set together with __HSTS\_HEADERS\_ENABLE__ and set to any value the HTTP Strict Transport Security will be deactivated on subdomains
 
